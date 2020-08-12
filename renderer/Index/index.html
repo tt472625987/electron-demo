@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    /> -->
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <title>音乐播放器</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h3>我的播放器</h3>
+      <button
+        id="add_button"
+        type="button"
+        class="btn btn-primary btn-lg btn-block mt-4"
+      >
+        添加歌曲到曲库
+      </button>
+      <div id="tracksList" class="mt-4"></div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/cd38ddca9a.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
+</html>
